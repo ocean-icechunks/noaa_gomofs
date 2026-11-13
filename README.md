@@ -18,5 +18,9 @@ gomofs status 3d --store-path /some/dir     # or set GOMOFS_S3_BUCKET etc. for S
 gomofs update 3d --store-path /some/dir
 ```
 
+[`notebooks/noaa-gomofs-quickstart.ipynb`](notebooks/noaa-gomofs-quickstart.ipynb) opens `timeseries-3d`
+anonymously and plots the latest surface temperature (hvplot) and a month of surface temperature at NERACOOS
+buoy B01, ending with the newest forecast. It is committed without outputs.
+
 `.github/workflows/update.yml` runs `gomofs update` and `gomofs status` for both stores every three
 hours. See [docs/operations.md](docs/operations.md) for setup and the rolling-archive caveat.
